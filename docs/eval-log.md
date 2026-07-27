@@ -2,6 +2,8 @@
 
 Manual evaluation practice for the Milestone 0 Routine (see `CLAUDE.md`). No automated eval harness exists yet — this log is the evidence base for whether/when to build one.
 
+**Note:** routine push notifications are currently unreliable (see "Known limitations" in `CLAUDE.md`) — don't wait for a phone push. Check manually each morning via the Code tab in the mobile app or `claude.ai/code/routines`.
+
 Right after reading each morning's briefing, add a row. Keep entries short — a phrase, not a paragraph.
 
 - **Miss** — something that actually mattered today but wasn't mentioned

@@ -31,6 +31,10 @@ Building the full custom engine (Postgres schema, context builder, MCP server, p
 - **Company/workspace isolation** is a real future requirement (this user works across multiple companies) but is not yet designed in detail — do not assume single-tenant when the real backend gets built.
 - **Human approval before risky actions.** Retrieval before writes; no autonomous production-affecting actions without explicit sign-off.
 
+## Known limitations
+
+- **Routine push notifications don't reliably deliver.** As of July 2026 this is a reported upstream bug: routine-triggered sessions log a "push requested" success but don't actually send anything (Claude Code issues #54994, #50949, #60208) — only Remote Control sessions push reliably. Confirmed on this account: all phone-side settings (app notification permissions, account match, battery optimization, in-app settings) checked out fine, and the routine itself fires correctly — it's the delivery path that's broken, not the setup. **Don't wait for a push from the Daily Morning Briefing routine** — check it manually (Code tab in the mobile app, or `claude.ai/code/routines` in a browser) until this is fixed upstream. If it stays broken long-term, that's a concrete reason to eventually want an alternative delivery path (e.g. email) rather than depending on Anthropic's routine-push specifically.
+
 ## Working conventions
 
 - No em-dashes/hyphen-dashes in prose written for career-facing docs elsewhere in this user's environment — not strictly required here, but keep writing plain and direct.
