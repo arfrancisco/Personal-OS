@@ -35,6 +35,14 @@ Building the full custom engine (Postgres schema, context builder, MCP server, p
 
 - **Routine push notifications don't reliably deliver.** As of July 2026 this is a reported upstream bug: routine-triggered sessions log a "push requested" success but don't actually send anything (Claude Code issues #54994, #50949, #60208) — only Remote Control sessions push reliably. Confirmed on this account: all phone-side settings (app notification permissions, account match, battery optimization, in-app settings) checked out fine, and the routine itself fires correctly — it's the delivery path that's broken, not the setup. **Don't wait for a push from the Daily Morning Briefing routine** — check it manually (Code tab in the mobile app, or `claude.ai/code/routines` in a browser) until this is fixed upstream. If it stays broken long-term, that's a concrete reason to eventually want an alternative delivery path (e.g. email) rather than depending on Anthropic's routine-push specifically.
 
+## Routine convention: prompts live in the repo, not in the routine config
+
+Any Claude Routine tied to this repo should keep its actual instructions in a versioned file under `prompts/` (e.g. `prompts/daily-briefing.md`), not embedded directly in the routine's own job config. The routine's own prompt (the `events[].data.message.content` field, set via `RemoteTrigger`) should be reduced to a thin pointer: *"Read `prompts/<name>.md` in this repo and follow it exactly to produce today's output. If the file isn't found, say so plainly rather than improvising."*
+
+This requires `Read` in the routine's `allowed_tools`, and the routine's `session_context.sources` must include this repo's `git_repository` so there's actually something to check out and read.
+
+Reasoning: prompt changes then become normal git commits (diffable, reviewable, show up in `git log`) instead of opaque edits only visible by calling the routine API. Matches the project's general principle of versioning prompts, not just code.
+
 ## Working conventions
 
 - No em-dashes/hyphen-dashes in prose written for career-facing docs elsewhere in this user's environment — not strictly required here, but keep writing plain and direct.
