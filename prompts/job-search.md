@@ -8,13 +8,23 @@ Match against my actual background:
 - NOT a Python engineer. Any Python touching the LLM/RAG projects above was incidental (calling embedding/OpenAI APIs, glue scripts) — not deep Python engineering. Do not treat "strong/production Python" as a match; skip postings where Python (or another language I don't have — Go, Java, C#, etc.) is listed as the primary/required implementation language. My primary languages are Ruby and TypeScript/JavaScript.
 - If more detail is needed, the full resume content lives in the `arfrancisco/career` repo under `resume/content/` (experience.yaml, skills.yaml, projects.yaml, summary.md) — read it if that repo is available as a source; otherwise use the summary above.
 
-1. Search the web for recent (last 3-5 days) postings for: Senior Software Engineer, AI Engineer, AI/LLM Engineer, AI/Agentic Software Engineer, or Solutions Engineer roles — specifically ones that value applied LLM/RAG engineering (API integration, vector search, chatbot/agent development) layered on a senior backend/full-stack background, not pure ML/data-science roles requiring a research background or formal ML training I don't have.
-2. I'm based in Pasig, PH. Remote eligibility is a hard filter, not just a preference: only include a posting if the listing itself explicitly states it's open to my location — e.g. "remote, any location," "APAC," "Philippines," or a company known to already employ PH-based remote staff. If a listing only names other regions as eligible (US-only, EU-only, LatAm-only, etc.) or eligibility is unclear even after checking the actual posting, exclude it — don't include it as a "match" with a caveat to verify later. Vague aggregator summaries ("remote-first company") are not enough; check the actual job page for the eligibility line before including.
-3. Also treat required language/stack as a hard filter per the background note above — skip anything requiring Python (or another language I don't have) as the core implementation language, even if the AI/RAG parts of the role are a strong fit.
-4. For each match, give: company, role title, why it's a fit (2-3 bullets max, tied to specific skills/experience above, not generic), and the application link.
-5. Skip generic recruiter spam, MLM-adjacent postings, and anything requiring a PhD or years of published ML research.
-6. Cap at 8-10 postings per run. If nothing new or worthwhile turned up — including if everything found fails the location or language filter — say so plainly rather than padding the list.
+Run TWO separate searches and present TWO separate lists (don't merge them):
 
-Present as a scannable list, most-relevant first.
+**List A — AI/LLM-fit roles**
+1. Search the web for recent (last 3-5 days) postings for: Senior Software Engineer, AI Engineer, AI/LLM Engineer, AI/Agentic Software Engineer, or Solutions Engineer roles — specifically ones that value applied LLM/RAG engineering (API integration, vector search, chatbot/agent development) layered on a senior backend/full-stack background, not pure ML/data-science roles requiring a research background or formal ML training I don't have.
+2. Also treat required language/stack as a hard filter per the background note above — skip anything requiring Python (or another language I don't have) as the core implementation language, even if the AI/RAG parts of the role are a strong fit.
+3. Cap at 8-10 postings.
+
+**List B — plain Ruby on Rails Senior Software Engineer roles**
+1. Search the web for recent (last 3-5 days) postings for Senior (or Staff/Lead) Software Engineer roles where Ruby on Rails is the core/required stack — no AI/LLM angle needed, this is just my bread-and-butter backend experience. Ordinary Rails API/monolith, GraphQL, React/TypeScript roles all count.
+2. Cap at 8-10 postings.
+
+**Applies to both lists:**
+- I'm based in Pasig, PH. Remote eligibility is a hard filter, not just a preference: only include a posting if the listing itself explicitly states it's open to my location — e.g. "remote, any location," "APAC," "Philippines," or a company known to already employ PH-based remote staff. If a listing only names other regions as eligible (US-only, EU-only, LatAm-only, etc.) or eligibility is unclear even after checking the actual posting, exclude it — don't include it as a "match" with a caveat to verify later. Vague aggregator summaries ("remote-first company") are not enough; check the actual job page for the eligibility line before including.
+- For each match, give: company, role title, why it's a fit (2-3 bullets max, tied to specific skills/experience above, not generic), and the application link.
+- Skip generic recruiter spam, MLM-adjacent postings, and anything requiring a PhD or years of published ML research.
+- If nothing new or worthwhile turned up for a list — including if everything found fails the location or language filter — say so plainly for that list rather than padding it. The two lists can each independently come up empty; don't skip a list just because the other one did.
+
+Present each list as scannable, most-relevant first.
 
 Always include the application link directly in the final chat summary/response itself (not only in a push notification) — push delivery is known to be unreliable (see CLAUDE.md), so the visible summary must be self-contained with links, not require asking for them afterward.
