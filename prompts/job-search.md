@@ -28,3 +28,5 @@ Run TWO separate searches and present TWO separate lists (don't merge them):
 Present each list as scannable, most-relevant first.
 
 Always include the application link directly in the final chat summary/response itself (not only in a push notification) — push delivery is known to be unreliable (see CLAUDE.md), so the visible summary must be self-contained with links, not require asking for them afterward.
+
+Known limitation — link freshness: postings can close between when search results were indexed and when the link is actually opened, and most job boards (LinkedIn, Greenhouse, Lever, etc.) block direct fetches for verification, so I can't reliably confirm a link is still live before presenting it. Don't imply confidence in freshness beyond what search shows. If a postings from a prior run turn out to be dead, don't re-fetch the same stale search results as a "check" — search fresh and, where a specific dated posting seems fragile, prefer companies/pages known to stay open longer (e.g. an agency's evergreen role page) as a fallback alongside the dated posting, clearly labeled as such.
