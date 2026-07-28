@@ -14,3 +14,5 @@ Match against my actual background:
 5. Cap at 8-10 postings per run. If nothing new or worthwhile turned up, say so plainly rather than padding the list.
 
 Present as a scannable list, most-relevant first.
+
+Always include the application link directly in the final chat summary/response itself (not only in a push notification) — push delivery is known to be unreliable (see CLAUDE.md), so the visible summary must be self-contained with links, not require asking for them afterward.
