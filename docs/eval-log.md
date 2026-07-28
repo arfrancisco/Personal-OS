@@ -12,7 +12,7 @@ Right after reading each morning's briefing, add a row. Keep entries short — a
 
 | Date | Miss | Wrong | Notes |
 |------|------|-------|-------|
-|      |      |       |       |
+| 2026-07-28 | — | AI News section | Links were weekly/monthly roundup listicles ("AI Weekly Pulse", "Seven Days Seven Releases", "AI Mega-Update"), not specific single articles — despite the prompt saying to avoid listicles. Tightened step 3 wording same day. |
 
 ## How to read this later
 
