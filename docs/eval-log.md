@@ -13,6 +13,7 @@ Right after reading each morning's briefing, add a row. Keep entries short — a
 | Date | Miss | Wrong | Notes |
 |------|------|-------|-------|
 | 2026-07-28 | — | AI News section | Links were weekly/monthly roundup listicles ("AI Weekly Pulse", "Seven Days Seven Releases", "AI Mega-Update"), not specific single articles — despite the prompt saying to avoid listicles. Tightened step 3 wording same day. |
+| 2026-07-29 | Avvoka and Likha-IT/c-fo.com rejections | — | Application-status routine (not the morning briefing) reported both as "awaiting outcome" after their final interviews; user corrected live that both had already rejected him, through a channel Gmail/Calendar never saw (call, portal, or verbal). Root cause: the routine only had Gmail + Calendar as sources, so any status change happening outside those two channels was invisible and got silently stale. Fix same day: created a "Job Applications Tracker" Notion database as a persisted source of truth, and rewrote `prompts/application-status.md` to reconcile against it each run instead of re-deriving everything from Gmail/Calendar from scratch. |
 
 ## How to read this later
 
