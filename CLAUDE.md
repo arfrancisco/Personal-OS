@@ -42,6 +42,8 @@ Keep the actual instructions in a versioned file under `prompts/` (e.g. `prompts
 
 This requires `Read` in the routine's `allowed_tools`, and the routine's `session_context.sources` must include this repo's `git_repository` so there's actually something to check out and read.
 
+**Connectors attach automatically at routine creation.** Connect services once at claude.ai/customize/connectors (Gmail, Calendar, Drive, Notion, etc.) — don't pass `mcp_connections` when calling `RemoteTrigger action:"create"`. The API auto-populates it from every connector already connected on the account; confirmed by creating this project's four routines with no `mcp_connections` specified and seeing Gmail/Calendar/Notion/Drive show up in the response unrequested. The `/schedule` skill's own preloaded "no connectors" warning is unreliable (stale/differently-scoped) — trust the live `RemoteTrigger create` response instead, not that static text.
+
 Reasoning: prompt changes then become normal git commits (diffable, reviewable, show up in `git log`) instead of opaque edits only visible by calling the routine/task API. Matches the project's general principle of versioning prompts, not just code.
 
 ## Working conventions
