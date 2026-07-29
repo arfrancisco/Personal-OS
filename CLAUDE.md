@@ -12,7 +12,7 @@ It is also, deliberately, a vehicle for learning current, hireable AI-orchestrat
 
 We are deliberately NOT running a custom Rails/Postgres engine yet. Instead:
 
-- Four scheduled automations — Daily Morning Briefing, Bill payment reminder, Application status check, Job search scan — run as **Cowork scheduled tasks**, using native MCP connectors and fetching their prompt from `prompts/*.md` in this repo live on each run — no custom code. A fifth, LinkedIn post drafts, still runs as a **Claude Routine**.
+- Four scheduled automations — Daily Morning Briefing, Bill payment reminder, Application status check, Job search scan — run as **Claude Routines**, using native MCP connectors and fetching their prompt from `prompts/*.md` in this repo live on each run — no custom code.
 - **Claude Cowork** (mobile/web/desktop) also handles ad-hoc questions any time, in addition to running the scheduled tasks above.
 - A `Gemfile`/`app/` Rails skeleton already exists in this repo from an earlier exploration, but is **paused**. Do not resume building it without a concrete, evidenced reason (see below).
 
@@ -38,9 +38,9 @@ Building the full custom engine (Postgres schema, context builder, MCP server, p
 
 ## Routine convention: prompts live in the repo, not in the routine config
 
-This applies whether the schedule lives as a Cowork scheduled task or a Claude Routine: keep the actual instructions in a versioned file under `prompts/` (e.g. `prompts/daily-briefing.md`), not embedded in the job's own config. The four Cowork-scheduled tasks already fetch their prompt file live from GitHub on each run. The remaining Claude Routine (LinkedIn post drafts) should keep its own prompt (the `events[].data.message.content` field, set via `RemoteTrigger`) reduced to a thin pointer: *"Read `prompts/<name>.md` in this repo and follow it exactly to produce today's output. If the file isn't found, say so plainly rather than improvising."*
+Keep the actual instructions in a versioned file under `prompts/` (e.g. `prompts/daily-briefing.md`), not embedded in the routine's own config. Each routine's own prompt (the `events[].data.message.content` field, set via `RemoteTrigger`) should be reduced to a thin pointer: *"Read `prompts/<name>.md` in this repo and follow it exactly to produce today's output. If the file isn't found, say so plainly rather than improvising."*
 
-For a Claude Routine specifically, this requires `Read` in the routine's `allowed_tools`, and the routine's `session_context.sources` must include this repo's `git_repository` so there's actually something to check out and read.
+This requires `Read` in the routine's `allowed_tools`, and the routine's `session_context.sources` must include this repo's `git_repository` so there's actually something to check out and read.
 
 Reasoning: prompt changes then become normal git commits (diffable, reviewable, show up in `git log`) instead of opaque edits only visible by calling the routine/task API. Matches the project's general principle of versioning prompts, not just code.
 
