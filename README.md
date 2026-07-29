@@ -2,12 +2,13 @@
 
 A personal AI "second brain" — durable, source-backed memory across calendar, email, projects, tasks, and decisions — built partly as a vehicle for learning current AI-orchestration patterns (context engineering, MCP, evals, provenance).
 
-**Current phase: Milestone 0.** No custom backend yet. Four scheduled automations run against this repo instead:
+**Current phase: Milestone 0.** No custom backend yet. Five scheduled automations run against this repo instead:
 
 - **Daily Morning Briefing** — calendar/email triage each morning, plus a quick AI-news digest
 - **Bill payment reminder** — checks for upcoming bills, creates calendar reminders
 - **Application status check** — tracks pending job applications and interviews
 - **Job search scan** — daily search for new job postings matching my background (Senior SWE / AI-LLM engineer roles), with fit rationale and application links
+- **Learning & growth check-in** — weekly, two tracks: using Claude/Claude Code better, and building toward a Forward Deployed Engineer skillset. Progress tracked in a Notion "Learning Tracker" database
 
 They run as scheduled Claude Routines, fetching their prompt live from GitHub each run rather than duplicating it. `prompts/*.md` in this repo is the versioned source of truth.
 
