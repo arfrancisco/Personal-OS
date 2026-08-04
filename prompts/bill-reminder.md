@@ -1,9 +1,12 @@
-Check for upcoming bill payments and send a daily reminder.
+Check for upcoming bill payments and send a daily reminder — using the "Bills Tracker" Notion database as the persisted source of truth, not the budget sheet/Gmail/Calendar alone.
 
-1. Review the shared Google Sheet (https://docs.google.com/spreadsheets/d/1gyp1TzbpfoHuG8Eiyz6l4wny7dcEdn8d6JS3iUWVshs/edit?gid=1158169143#gid=1158169143) for bills due today or in the next 7 days.
-2. Check email for recent invoices or payment reminders.
-3. Check calendar for any bill-payment-related events or reminders.
-4. For each bill found in step 2 with a confirmed due date, check whether a calendar event already exists for it (match by payee name and due date). If not, create one on the due date at 9:00–9:30 AM with two popup reminders: 1440 minutes before (day before) and 0 minutes before (day of). Include the amount and account/reference number in the event description. Skip bills without a confirmed due date — don't guess a date.
-5. Compile a list of bills due soon, including due date, amount (if available), and any notes.
+1. Query the "Bills Tracker" Notion database. This is where state persists across runs — including whether a bill was already flagged overdue, already got a calendar event, or was confirmed paid through a channel (bank app, cash, portal) that never shows up in Gmail.
+2. Review the shared Google Sheet (https://docs.google.com/spreadsheets/d/1gyp1TzbpfoHuG8Eiyz6l4wny7dcEdn8d6JS3iUWVshs/edit?gid=1158169143#gid=1158169143) for bills due today or in the next 7 days.
+3. Check email for recent invoices or payment reminders.
+4. Check calendar for any bill-payment-related events or reminders.
+5. For each bill found in step 3 with a confirmed due date, check whether a calendar event already exists for it (match by payee name and due date). If not, create one on the due date at 9:00–9:30 AM with two popup reminders: 1440 minutes before (day before) and 0 minutes before (day of). Include the amount and account/reference number in the event description. Skip bills without a confirmed due date — don't guess a date.
+6. Reconcile: for each bill found in steps 2-4, update the matching Notion row (Status, Amount, Due Date, Calendar Event Created, Last Confirmed, Notes) or create a new row if it's new. Match on Payee + Due Date, not just Payee name, so recurring monthly bills don't collide with each other across months. If a due date has passed with no payment-confirmation email found, set Status to "Overdue" rather than silently dropping it — that's the gap this tracker exists to close. If a bill only has a recurring pattern from the budget sheet (e.g. "charged on the 7th") with no confirmed date this cycle, set Status to "No confirmed date" and don't create a calendar event for it.
+7. If the user mentions a bill was paid, or paid a different amount than expected, in conversation, update the matching Notion row directly from what they said rather than waiting for it to show up in email.
+8. Compile a list of bills due soon, including due date, amount (if available), and any notes — plus anything sitting in the tracker as "Overdue" regardless of whether it's within the 7-day window, since that's exactly the kind of thing a rolling lookback would otherwise lose.
 
-Format as a clear, scannable list. If there are no bills due in the next 7 days, confirm briefly. Note in the summary which bills got a new calendar event created vs. which already had one.
+Format as a clear, scannable list. If there are no bills due in the next 7 days and nothing overdue, confirm briefly. Note in the summary which bills got a new calendar event created vs. which already had one, and which Notion rows were updated vs. newly created. If the Notion database isn't found, say so plainly rather than reconstructing everything from the sheet/Gmail each time.
