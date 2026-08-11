@@ -14,7 +14,7 @@ We are deliberately NOT running a custom Rails/Postgres engine yet. Instead:
 
 - Four scheduled automations — Daily Morning Briefing, Bill payment reminder, Application status check, Job search scan — run as **Claude Routines**, using native MCP connectors and fetching their prompt from `prompts/*.md` in this repo live on each run — no custom code.
 - **Claude Cowork** (mobile/web/desktop) also handles ad-hoc questions any time, in addition to running the scheduled tasks above.
-- A `Gemfile`/`app/` Rails skeleton already exists in this repo from an earlier exploration, but is **paused**. Do not resume building it without a concrete, evidenced reason (see below).
+- No custom backend code exists yet, and none is scaffolded — everything so far runs entirely on off-the-shelf Claude tooling (Routines, Cowork, native MCP connectors). Don't start building a custom engine without a concrete, evidenced reason (see below).
 
 ## Why this phase exists
 

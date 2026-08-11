@@ -16,4 +16,4 @@ See:
 - [`prompts/`](./prompts) — the actual instructions each routine runs, versioned as plain files rather than buried in routine config
 - [`docs/eval-log.md`](./docs/eval-log.md) — the manual evaluation practice tracking whether this is actually useful, and what (if anything) justifies building a real backend later
 
-A Rails skeleton exists under `app/`/`config`/etc. from early exploration but is currently paused — see `CLAUDE.md` for why.
+No custom backend code exists yet — everything runs on Claude's own tooling (Routines, Cowork, connectors) instead. See `CLAUDE.md` for why, and what would justify starting one.
