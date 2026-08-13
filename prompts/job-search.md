@@ -13,6 +13,8 @@ Match against my actual background:
 4. Skip generic recruiter spam, MLM-adjacent postings, and anything requiring a PhD or years of published ML research.
 5. Skip WeWorkRemotely as a source (its listings are paywalled and can't be verified) — link to the company's own careers page or another open job board instead.
 6. Before including a posting, check that it still looks open/accepting applications (not stale or filled) as best as the source allows. If freshness or open-status can't be confirmed, say so next to that listing rather than presenting it as verified.
+   - This check requires actually opening the listing (e.g. `WebFetch`), not inferring it from `WebSearch` result snippets. Snippets are frequently stale, cached, or scraped from a different (closed) copy of the posting and are not sufficient evidence of "still open" or "region X eligible" on their own — this has produced confirmed-wrong results twice (2026-08-10, 2026-08-13 in `docs/eval-log.md`).
+   - If page-fetching tooling is unavailable or blocked for every job-board/ATS domain tried, do not present any posting as a confirmed match. Say plainly that verification tooling wasn't available this run and no postings could be confirmed open/eligible, rather than listing unverified leads with a caveat attached.
 7. Cap at 8-10 postings per run. If nothing new or worthwhile turned up, say so plainly rather than padding the list.
 
 Present as a scannable list, most-relevant first.
