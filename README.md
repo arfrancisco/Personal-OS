@@ -16,5 +16,6 @@ See:
 - [`CLAUDE.md`](./CLAUDE.md) — full project context, architecture principles, and known limitations. Read this first.
 - [`prompts/`](./prompts) — the actual instructions each routine runs, versioned as plain files rather than buried in routine config
 - [`docs/eval-log.md`](./docs/eval-log.md) — the manual evaluation practice tracking whether this is actually useful, and what (if anything) justifies building a real backend later
+- [`docs/memory-architecture.md`](./docs/memory-architecture.md) — how Claude Code's session memory and Notion currently stand in for the future memory/database layer, and what would trigger building it for real
 
 A Rails skeleton exists under `app/`/`config`/etc. from early exploration but is currently paused — see `CLAUDE.md` for why.
