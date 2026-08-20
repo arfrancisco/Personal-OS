@@ -19,6 +19,41 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
   and on the **Monday.com** form.
 - Send an **invoice** on the last workday of each month.
 
+### SOD (start-of-day) email template
+
+To: [Direct Manager] · CC: Den
+
+```
+Today's Task:
+
+Priority
+
+* Status (In progress) Task 1
+* Status (Not yet started) Task 2
+
+Blockers: None (or note the issue)
+Questions:
+```
+
+### EOD (end-of-day) email template
+
+To: [Direct Manager]
+
+```
+Hi [Direct Manager]
+Here's my end of day report.
+
+Completed Today:
+
+* Task 1
+* Task 2
+
+Next Focus:
+
+* Task 1
+* Task 2
+```
+
 ## Daily log habit
 
 Starting 24 August 2026, keep a daily log of everything worked on for Adaca/
