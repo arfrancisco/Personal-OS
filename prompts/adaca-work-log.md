@@ -17,7 +17,7 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 - Post a **time in** and **time out** message in Adaca's Slack, channel
   `client-beamtree-` (looks like a truncated channel name, confirm the full
   one when convenient).
-- Track time and work in **one.adaca.com**.
+- Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
 - **Leaves/emergencies**: inform Adaca first, then file leave on **Adaca One**
   and on the **Monday.com** form.
 - Send an **invoice** on the last workday of each month.
