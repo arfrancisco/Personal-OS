@@ -68,6 +68,12 @@ As of 24 August 2026:
   where they said to contact the direct manager instead, who then said to
   contact TechD again — a referral loop with no clear owner yet. Still
   waiting on a real resolution.
+- Also unable to reach the Notion website directly (this personal-os
+  project's Notion connector still worked fine, since it authenticates
+  server-side rather than through the local network route) — suspected
+  cause is Adaca/Beamtree's **Cato VPN** client blocking or intercepting
+  traffic to notion.so. Worth confirming with TechD once the Teams loop
+  is resolved.
 
 ## Daily log habit
 
