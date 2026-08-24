@@ -57,6 +57,18 @@ Next Focus:
 * Task 2
 ```
 
+## Access & IT
+
+Access requests go through **TechD** (external IT support service Adaca/
+Beamtree use for provisioning) — not Adaca or Beamtree staff directly.
+
+As of 24 August 2026:
+- Granted: Outlook email, Jira.
+- Missing: **Microsoft Teams**. Ticket filed with TechD; had a call with them
+  where they said to contact the direct manager instead, who then said to
+  contact TechD again — a referral loop with no clear owner yet. Still
+  waiting on a real resolution.
+
 ## Daily log habit
 
 Starting 24 August 2026, keep a daily log of everything worked on for Adaca/
