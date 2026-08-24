@@ -25,7 +25,9 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 
 ### SOD (start-of-day) email template
 
-To: [Direct Manager] · CC: Den
+Send from the **Adaca Outlook account**, not personal Gmail.
+To: Arpan (direct manager, Beamtree) · CC: Den (HR, Adaca).
+Addresses are in the Notion page, not here — this repo is public.
 
 ```
 Today's Task:
@@ -41,7 +43,8 @@ Questions:
 
 ### EOD (end-of-day) email template
 
-To: [Direct Manager]
+Send from the **Adaca Outlook account**, not personal Gmail.
+To: Arpan (direct manager, Beamtree).
 
 ```
 Hi [Direct Manager]
