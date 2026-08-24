@@ -28,7 +28,7 @@ morning, then send the EOD as a reply on that same thread. Keeps the day's
 plan and its outcome side by side for the manager, and makes it easy to see
 what actually landed against what was planned.
 
-Subject: `Daily Report — DD Month YYYY — Alain Francisco`. Deliberately not
+Subject: `Daily Report: DD Month YYYY (Alain Francisco)`. Deliberately not
 "Start of Day", so the EOD reply doesn't read oddly against it.
 
 ### SOD (start-of-day) email template
