@@ -47,8 +47,7 @@ Send from the **Adaca Outlook account**, not personal Gmail.
 To: Arpan (direct manager, Beamtree).
 
 ```
-Hi [Direct Manager]
-Here's my end of day report.
+Here's my end of day report:
 
 Completed Today:
 
@@ -60,6 +59,10 @@ Next Focus:
 * Task 1
 * Task 2
 ```
+
+Adaca's original template opened with "Hi [Direct Manager]" and ended the
+line with a period. Dropping the greeting and using a colon reads better —
+that's the preferred form above.
 
 ## Invoicing
 
