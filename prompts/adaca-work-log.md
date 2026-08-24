@@ -20,7 +20,7 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 - Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
 - **Leaves/emergencies**: inform Adaca first, then file leave on **Adaca One**
   and on the **Monday.com** form.
-- Send an **invoice** early in the month *following* the month worked — see
+- Send an **invoice** at the end of the last working day of each month — see
   "Invoicing" below for the full process.
 
 ### SOD (start-of-day) email template
@@ -63,19 +63,22 @@ Next Focus:
 Adaca supplies an Excel invoice template (guide effective August 2025). Fill
 in the **Invoice Template** tab only — never edit the `Invoice_Log` tab.
 
-**Open question — submission deadline.** Adaca's own documents disagree: the
-field-by-field guide and payment schedule say submit "within the 1st week /
-no later than the 7th", while the quick-reference page and the template's own
-submission checklist say "on or before the 2nd". Unresolved — confirm with
-Finance. Until then, treat the **2nd** as the target (the stricter of the two,
-so meeting it satisfies either reading).
+**Our practice: send the invoice at the end of the last working day of the
+month.** That is ahead of every deadline Adaca states, so it sidesteps the
+contradiction in their own docs — the field-by-field guide and payment
+schedule say "within the 1st week / no later than the 7th", while the
+quick-reference page and the template's submission checklist say "on or
+before the 2nd". One caveat worth confirming with Finance: the template's
+checklist expects the **Invoice Date field** to read the 2nd of the following
+month, so sending early may mean dating the invoice ahead rather than dating
+it the day it goes out.
 
 ### Cycle
 
 | Step | When |
 |---|---|
 | Deliver services | 1st to last day of the month |
-| Submit invoice | Early the following month (see open question above) |
+| Submit invoice | End of the last working day of that same month |
 | Finance reviews | 7th–10th of the following month |
 | Payment released | 15th of the following month |
 
