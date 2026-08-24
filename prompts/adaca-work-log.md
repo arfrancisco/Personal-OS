@@ -62,31 +62,27 @@ Next Focus:
 Access requests go through **TechD** (external IT support service Adaca/
 Beamtree use for provisioning) — not Adaca or Beamtree staff directly.
 
-As of 24 August 2026:
-- Granted: Outlook email, Jira, **Microsoft Teams** (resolved — the TechD
-  ↔ direct manager referral loop cleared up).
-- Also unable to reach the Notion website directly (this personal-os
-  project's Notion connector still worked fine, since it authenticates
-  server-side rather than through the local network route) — suspected
-  cause is Adaca/Beamtree's **Cato VPN** client blocking or intercepting
-  traffic to notion.so. Worth confirming with TechD.
-- **Intune** enrollment likely unnecessary — Adaca/Beamtree are apparently
-  providing a work laptop, which would sidestep needing to manage this
-  machine under their MDM.
-- In progress: access to Beamtree's **git repository**.
+Current grant/pending status for specific tools (Teams, Jira, git repo, etc.)
+is tracked in the Notion Daily Log, not here — see "Daily log habit" below
+for why.
 
 ## Daily log habit
 
 Starting 24 August 2026, keep a daily log of everything worked on for Adaca/
 Beamtree. Two tiers, matching how this repo splits things:
 
-- **This file (rarely changes)**: onboarding process, checklist, any standing
-  rules Adaca/Beamtree communicate. Edit this file directly (or ask Claude
-  Code to) when the process itself changes.
+- **This file (rarely changes)**: onboarding process, checklist, standing
+  rules Adaca/Beamtree communicate, and email/message templates. Edit this
+  file directly (or ask Claude Code to) when the process itself changes.
+  Litmus test: would this line still be true a month from now unedited? If
+  yes, it belongs here. If it's a status that will flip (access granted/
+  pending, a blocker that gets resolved), it belongs in Notion instead —
+  don't let this file accumulate a running status list that gets rewritten
+  every time something changes; that's what the Daily Log is for.
 - **Notion (day-to-day, changes constantly)**: the actual daily entries —
-  what got worked on, decisions, blockers, anything worth remembering later.
-  Lives at **Adaca — Beamtree → Daily Log** in Notion:
-  https://app.notion.com/p/3c252229fba0818bb04eca32e51644cd
+  what got worked on, decisions, blockers, current access/status snapshots,
+  anything worth remembering later. Lives at **Adaca — Beamtree → Daily Log**
+  in Notion: https://app.notion.com/p/3c252229fba0818bb04eca32e51644cd
 
   Entry format (one per work day, newest at the bottom, matches the existing
   Build Log convention used for other projects):
