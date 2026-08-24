@@ -66,14 +66,12 @@ Next Focus:
 Adaca supplies an Excel invoice template (guide effective August 2025). Fill
 in the **Invoice Template** tab only — never edit the `Invoice_Log` tab.
 
-**Our practice: send the invoice on the 1st of the following month**, covering
-the month just finished. This clears every deadline Adaca states, so the
-contradiction in their own docs never bites — the field-by-field guide and
-payment schedule say "within the 1st week / no later than the 7th", while the
-quick-reference page and the template's submission checklist say "on or
-before the 2nd". Invoicing on the 1st also means the service period is
-genuinely complete and the invoice date falls in the following month, which
-is what the template expects.
+**Settled practice: send the invoice on the 1st of the following month**,
+covering the month just finished, dated the day it goes out. This clears
+every deadline Adaca states — their docs variously say "no later than the
+7th" and "on or before the 2nd", and the 1st beats both, so the discrepancy
+never needs resolving. The service period is also genuinely complete by then
+and the invoice date falls in the following month, as the template expects.
 
 ### Cycle
 
