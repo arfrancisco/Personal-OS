@@ -23,9 +23,18 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 - Send an **invoice** on the 1st of each month, covering the month just
   finished — see "Invoicing" below for the full process.
 
+**One email thread per work day.** Start the thread with the SOD in the
+morning, then send the EOD as a reply on that same thread. Keeps the day's
+plan and its outcome side by side for the manager, and makes it easy to see
+what actually landed against what was planned.
+
+Subject: `Daily Report — DD Month YYYY — Alain Francisco`. Deliberately not
+"Start of Day", so the EOD reply doesn't read oddly against it.
+
 ### SOD (start-of-day) email template
 
-Send from the **Adaca Outlook account**, not personal Gmail.
+Send from the **Adaca Outlook account**, not personal Gmail. Starts the
+day's thread.
 To: Arpan (direct manager, Beamtree) · CC: Den (HR, Adaca).
 Addresses are in the Notion page, not here — this repo is public.
 
@@ -43,8 +52,8 @@ Questions:
 
 ### EOD (end-of-day) email template
 
-Send from the **Adaca Outlook account**, not personal Gmail.
-To: Arpan (direct manager, Beamtree).
+Send as a **reply on that day's existing SOD thread**, from the Adaca
+Outlook account.
 
 ```
 Here's my end of day report:
