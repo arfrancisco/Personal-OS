@@ -20,7 +20,8 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 - Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
 - **Leaves/emergencies**: inform Adaca first, then file leave on **Adaca One**
   and on the **Monday.com** form.
-- Send an **invoice** on the last workday of each month.
+- Send an **invoice** early in the month *following* the month worked — see
+  "Invoicing" below for the full process.
 
 ### SOD (start-of-day) email template
 
@@ -56,6 +57,70 @@ Next Focus:
 * Task 1
 * Task 2
 ```
+
+## Invoicing
+
+Adaca supplies an Excel invoice template (guide effective August 2025). Fill
+in the **Invoice Template** tab only — never edit the `Invoice_Log` tab.
+
+**Open question — submission deadline.** Adaca's own documents disagree: the
+field-by-field guide and payment schedule say submit "within the 1st week /
+no later than the 7th", while the quick-reference page and the template's own
+submission checklist say "on or before the 2nd". Unresolved — confirm with
+Finance. Until then, treat the **2nd** as the target (the stricter of the two,
+so meeting it satisfies either reading).
+
+### Cycle
+
+| Step | When |
+|---|---|
+| Deliver services | 1st to last day of the month |
+| Submit invoice | Early the following month (see open question above) |
+| Finance reviews | 7th–10th of the following month |
+| Payment released | 15th of the following month |
+
+Late or incomplete invoices get deferred to the next payment cycle.
+
+### Before you start
+
+- Have your signed Independent Contractor Agreement handy (confirms the rate).
+- Have complete bank details: bank name, branch, Swift/BIC, account number,
+  account holder name.
+
+### Fields
+
+Yellow cells = fill in. Blue text / orange / light blue = formulas or
+system-generated, do not edit.
+
+- **Invoice No.** — sequential per client, format `INV-[CLIENT]-[NNN]`
+  (e.g. `INV-MORRISON-001`).
+- **Invoice Date** — the date of submission.
+- **Service Period** — always the full calendar month: 1st to last day.
+- **Due Date** — auto-filled as the 15th of the following month. Do not edit.
+- **Inv # This Year** — auto-pulled from the Invoice Log. Do not edit.
+- **Contractor details** — full legal name and role exactly as they appear in
+  the Contractor Agreement, plus home address, personal email, phone.
+- **Bank details** — as above; double-check the account number every time.
+  Account holder name must match your ID.
+- **Client** / **Project + SOW** — the end client and project/SOW reference.
+- **Monthly Rate** — pre-filled by Finance in PHP. Do not change it without
+  confirming with Finance first.
+- **QTY (hours)** — 160 for a standard full month. Adjust only for a partial
+  month, and attach a written explanation plus notify Finance.
+- **Rate per Hour** — formula (monthly rate ÷ 160). Do not edit.
+- **Amount** — formula (QTY × rate per hour). Do not edit.
+- **Adjustments** — agreed deductions or additions (e.g. leave without pay,
+  reimbursements). Enter `0` if none; never leave blank.
+- **Total Due** — formula (subtotal + adjustments). Do not edit.
+- **Notes** — optional context for any deduction, adjustment, or unusual item
+  (e.g. "3 days LWOP, pre-approved by manager on 15 Jun").
+
+### Submitting
+
+- Save as **PDF**, not Excel.
+- Email to **accounts@adaca.com** (also the address for payment queries).
+- Subject line: `Invoice – [Name] – [Service Period] – [Client/Project]`
+  (e.g. `Invoice – Maria Santos – July 2026 – Client ABC`).
 
 ## Access & IT
 
