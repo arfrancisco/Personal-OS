@@ -20,8 +20,8 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 - Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
 - **Leaves/emergencies**: inform Adaca first, then file leave on **Adaca One**
   and on the **Monday.com** form.
-- Send an **invoice** on the 1st of each month, covering the month just
-  finished — see "Invoicing" below for the full process.
+- Send an **invoice** on the last working day of each month, covering that
+  same month. Miss it and payment defers a full cycle. See "Invoicing" below.
 
 **One email thread per work day.** Start the thread with the SOD in the
 morning, then send the EOD as a reply on that same thread. Keeps the day's
@@ -78,21 +78,37 @@ that's the preferred form above.
 Adaca supplies an Excel invoice template (guide effective August 2025). Fill
 in the **Invoice Template** tab only — never edit the `Invoice_Log` tab.
 
-**Settled practice: send the invoice on the 1st of the following month**,
-covering the month just finished, dated the day it goes out. This clears
-every deadline Adaca states — their docs variously say "no later than the
-7th" and "on or before the 2nd", and the 1st beats both, so the discrepancy
-never needs resolving. The service period is also genuinely complete by then
-and the invoice date falls in the following month, as the template expects.
+**Settled practice: send the invoice on the last working day of the month
+being invoiced.** Not the following month.
+
+This comes from Adaca Finance directly (August 2026 payroll notice), which
+required manual invoices "on or before 31 August 2026", i.e. the last day of
+the service month itself. Finance was explicit that contractors who miss the
+deadline are excluded from that payroll run and do not get paid until the
+next cycle.
+
+**Trust Finance's payroll notices over the invoice template documents.** The
+template pack disagrees with itself (one page says submit by the 7th of the
+following month, another says the 2nd) and both are wrong about the operative
+deadline. It also states payment on the 15th, while Finance scheduled the
+August run for 10 September. The template is useful for filling in fields;
+it is not reliable on dates.
 
 ### Cycle
 
 | Step | When |
 |---|---|
 | Deliver services | 1st to last day of the month |
-| Submit invoice | 1st of the following month |
-| Finance reviews | 7th–10th of the following month |
-| Payment released | 15th of the following month |
+| Submit invoice | On or before the last working day of that same month |
+| Payment released | Per Finance's notice for that run (10 September for the August 2026 period) |
+| Missed the deadline | Deferred to the next cycle, roughly five weeks later |
+
+### Also required each period
+
+- Submit timesheets for approval.
+- Log any overtime in Adaca One, pre-approved. Overtime not pre-approved does
+  not get paid.
+- Log any unpaid leave taken in the period, for record-keeping.
 
 Late or incomplete invoices get deferred to the next payment cycle.
 
