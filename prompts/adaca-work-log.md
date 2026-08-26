@@ -124,6 +124,24 @@ it is not reliable on dates.
 | Payment released | Per Finance's notice for that run (10 September for the August 2026 period) |
 | Missed the deadline | Deferred to the next cycle, roughly five weeks later |
 
+### Practical routine
+
+Send at the end of the last working day of the month, so the hours are
+actual rather than estimated. To avoid starting from scratch on a day that
+is usually busy, **pre-fill everything except the final hours count a day or
+two ahead**: name, bank details, invoice number, service period, client,
+rate and any partial-month explanation. Then the last day is just adding the
+final hours and exporting to PDF.
+
+Don't leave it late in the evening. Adaca Finance is in Sydney, two hours
+ahead of Manila, so a Manila late-night send can carry a timestamp that
+tips into the following month against an "on or before" deadline. Aim for
+Manila early evening at the latest.
+
+Don't rely on a scheduled reminder for this. Routine push notifications are
+unreliable on this account (see `CLAUDE.md`). The dependable mechanism is
+the daily SOD, which gets written anyway, so put the invoice on it.
+
 ### Also required each period
 
 - Submit timesheets for approval.
