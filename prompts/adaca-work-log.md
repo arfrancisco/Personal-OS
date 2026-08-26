@@ -46,6 +46,12 @@ whether the intent actually happened:
 The point is that the reports reflect what actually happened rather than
 drifting into a list of intentions nobody checks.
 
+**Report substantive work, not setup and admin.** Routine environment
+setup, credential rotation, tool access and similar housekeeping are part
+of the day but not worth a line in the report. They go in the Notion daily
+log instead. Keep the email to things the manager would actually want to
+know about.
+
 ### SOD (start-of-day) email template
 
 Send from the **Adaca Outlook account**, not personal Gmail. Starts the
