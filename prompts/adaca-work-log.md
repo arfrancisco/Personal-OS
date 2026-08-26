@@ -31,6 +31,21 @@ what actually landed against what was planned.
 Subject: `Daily Report: DD Month YYYY (Alain Francisco)`. Deliberately not
 "Start of Day", so the EOD reply doesn't read oddly against it.
 
+**Always draft against the previous day's SOD and EOD.** Before writing a
+new one, read back what was planned and what was reported, then check
+whether the intent actually happened:
+
+- Anything in yesterday's SOD that did not land should either appear in
+  today's Priority list or be dropped deliberately, not silently.
+- Anything in yesterday's EOD "Next Focus" is the natural starting point
+  for today's "Today's Task".
+- If something keeps carrying over across several days, say so rather than
+  restating it as if it were new. A repeatedly deferred item is usually a
+  blocker, a bad estimate, or something that should be dropped.
+
+The point is that the reports reflect what actually happened rather than
+drifting into a list of intentions nobody checks.
+
 ### SOD (start-of-day) email template
 
 Send from the **Adaca Outlook account**, not personal Gmail. Starts the
