@@ -223,6 +223,12 @@ system-generated, do not edit.
 - Email to **accounts@adaca.com** (also the address for payment queries).
 - Subject line: `Invoice – [Name] – [Service Period] – [Client/Project]`
   (e.g. `Invoice – Maria Santos – July 2026 – Client ABC`).
+- Then upload the PDF to the invoices folder in Google Drive:
+  https://drive.google.com/drive/u/0/folders/1s3nvs_c7nrs0T5gvEGhewcqec35ZtD2S
+  Manual drag and drop. PDF only, since the xlsx can be regenerated from the
+  script at any time.
+- Update the invoice tracker in Notion, and bump `next_sequence` in
+  `~/.config/adaca/invoice.json`.
 
 ## Access & IT
 
