@@ -18,6 +18,12 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
   `client-beamtree-` (trailing dash confirmed correct — a naming quirk from
   whoever created the channel, not a typo).
 - Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
+- **Submit logged hours weekly** in Adaca One. Logging time is not enough on
+  its own — there is a submit button at the bottom of the time page, and the
+  week's hours have to be submitted for approval. Do it at the end of each
+  week. Finance treats submitted timesheets as a precondition for the monthly
+  payroll run, so unsubmitted hours can hold up payment even when the invoice
+  went in on time.
 - **Leaves/emergencies**: inform Adaca first, then file leave on **Adaca One**
   and on the **Monday.com** form.
 - Send an **invoice** on the last working day of each month, covering that
