@@ -130,6 +130,32 @@ it is not reliable on dates.
 | Payment released | Per Finance's notice for that run (10 September for the August 2026 period) |
 | Missed the deadline | Deferred to the next cycle, roughly five weeks later |
 
+### Generating it
+
+`scripts/generate_adaca_invoice.py` fills Adaca's template from a config
+file. Personal and bank details live in `~/.config/adaca/invoice.json`,
+outside this repo, because this repo is public.
+
+```
+python3 scripts/generate_adaca_invoice.py --month 2026-09 --hours 160
+```
+
+Add `--notes` whenever hours differ from 160, since Adaca requires a written
+explanation for a non-standard quantity (the script warns if you forget).
+Use `--period-start` and `--period-end` for a partial month. Bump
+`next_sequence` in the config after each send.
+
+It writes the yellow contractor cells and leaves every formula alone. It
+also writes a literal value into the "Inv # This Year" cell, which is a
+deliberate fix: the template's own `=COUNTA(Invoice_Log!B:B)-1` counts the
+Invoice_Log summary labels as if they were invoices, so it reports a wrong
+number.
+
+Open the result in Excel, confirm the totals, then export to PDF. Two things
+Excel gets wrong if a value is typed rather than written by the script:
+phone numbers become scientific notation unless the cell is text, and dates
+can reformat.
+
 ### Practical routine
 
 Send at the end of the last working day of the month, so the hours are
