@@ -18,6 +18,13 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
   `client-beamtree-` (trailing dash confirmed correct — a naming quirk from
   whoever created the channel, not a typo).
 - Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
+- **Work out the daily hours at the start of each month.** The target is 160
+  hours per month, not 8 hours per day, and the number of working days
+  varies. Divide 160 by that month's weekdays and log that figure daily so
+  the month lands exactly on target. Watch the h:mm conversion, since the
+  decimal and the minutes are different numbers: September 2026 has 22
+  weekdays, so 160/22 is 7.2727 hours, which is **7h 16m**, not 7h 22m.
+  Logging 7h 22m would overshoot by about two hours across the month.
 - **Submit logged hours weekly** in Adaca One. Logging time is not enough on
   its own — there is a submit button at the bottom of the time page, and the
   week's hours have to be submitted for approval. Do it at the end of each
