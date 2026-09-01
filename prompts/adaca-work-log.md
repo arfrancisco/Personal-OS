@@ -21,7 +21,10 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
 - **Log hours against a Jira ticket.** Beamtree contractors work against a
   ticket, so hours go against that ticket number and the ticket number goes
   on the Adaca One task entry itself. Time logged without a ticket reference
-  is not the expected format.
+  is not the expected format. Jira project key is `CDQ`. For work with no
+  specific ticket yet (workshops, discovery, reading), log against the epic.
+  Note that Confluence page references like `FC_0057` are **not** Jira keys
+  and will not resolve.
 - **Work out the daily hours at the start of each month.** The target is 160
   hours per month, not 8 hours per day, and the number of working days
   varies. Divide 160 by that month's weekdays and log that figure daily so
