@@ -18,6 +18,10 @@ scheduled Cowork task yet (deliberately manual for now — see "Status" below).
   `client-beamtree-` (trailing dash confirmed correct — a naming quirk from
   whoever created the channel, not a typo).
 - Track time and work in **one.adaca.com** (time entry page: https://one.adaca.com/time).
+- **Log hours against a Jira ticket.** Beamtree contractors work against a
+  ticket, so hours go against that ticket number and the ticket number goes
+  on the Adaca One task entry itself. Time logged without a ticket reference
+  is not the expected format.
 - **Work out the daily hours at the start of each month.** The target is 160
   hours per month, not 8 hours per day, and the number of working days
   varies. Divide 160 by that month's weekdays and log that figure daily so
